@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#d3ff11"
+        android:dividerHeight="2dp"
+        android:divider="#00fff7"
+        android:layout_weight="1" >
+    </ListView>
+    <Button
+        android:id="@+id/btnAddNote"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:background="@drawable/button_selector"
+        android:text="添加日志" />
+
+</LinearLayout>

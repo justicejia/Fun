@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jym.fun.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:title="@string/share"
+        app:showAsAction="ifRoom|withText"
+        android:id="@+id/share">
+        <menu>
+            <group android:checkableBehavior="single">
+               <item
+                   android:id="@+id/weixin"
+                   android:title="@string/wechat"/>
+                <item
+                    android:id="@+id/qq"
+                    android:title="@string/QQ"/>
+                <item
+                    android:id="@+id/sina"
+                    android:title="@string/sina"/>
+            </group>
+        </menu>
+    </item>
+</menu>

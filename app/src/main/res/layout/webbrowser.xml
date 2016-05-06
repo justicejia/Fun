@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!-- 头部 -->
+    <LinearLayout
+        android:id="@+id/MyLayout_top"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:id="@+id/WebTitle"
+            android:layout_width="50dp"
+            android:background="#8daaeaff"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:textColor="#00f"
+            android:gravity="center"
+            android:text="网址:" />
+        <EditText
+            android:id="@+id/urltext"
+            android:layout_width="300dp"
+            android:textSize="5pt"
+            android:singleLine="true"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <!-- 底部 -->
+        <LinearLayout
+            android:id="@+id/MyLayout_bottom2"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:background="#DFDFDF"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <Button
+                android:id="@+id/BackBtn"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="3dp"
+                android:background="#8daaeaff"
+                android:layout_height="fill_parent"
+                android:text="Exit" />
+            <Button
+                android:id="@+id/GoBtn"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="3dp"
+                android:layout_height="fill_parent"
+                android:background="#8daaeaff"
+                android:text="Go" />
+            <Button
+                android:id="@+id/blogBtn"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="3dp"
+                android:background="#8daaeaff"
+                android:layout_height="fill_parent"
+                android:text="myblog" />
+
+            <Button
+                android:id="@+id/HomeBtn"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:background="#8daaeaff"
+                android:layout_height="fill_parent"
+                android:text="home" />
+        </LinearLayout>
+
+    <!-- 中部 -->
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/MyLayout_bottom2"
+        android:layout_below="@id/MyLayout_top">
+        <WebView
+            android:id="@+id/webshow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</RelativeLayout>
