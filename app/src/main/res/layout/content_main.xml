@@ -7,8 +7,10 @@
     tools:showIn="@layout/activity_main">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="wrap_content"
         android:id="@+id/bottom_sheet"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal">
 
@@ -17,10 +19,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:drawablePadding="2dp"
+            android:textSize="22sp"
             android:textColor="@drawable/tab_text"
             android:gravity="center"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="支付宝"
+            android:text="首页"
             android:background="#f60"
             android:id="@+id/tab1"
             android:layout_gravity="center" />
@@ -31,9 +34,10 @@
             android:layout_weight="1"
             android:textColor="@drawable/tab_text"
             android:gravity="center"
+            android:textSize="22sp"
             android:drawablePadding="2dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="口碑"
+            android:text="动漫"
             android:background="#f60"
             android:id="@+id/tab2"
             android:layout_gravity="center" />
@@ -41,11 +45,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="22sp"
             android:textColor="@drawable/tab_text"
             android:gravity="center"
             android:drawablePadding="2dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="朋友"
+            android:text="游戏"
             android:background="#f60"
             android:id="@+id/tab3"
             android:layout_gravity="center" />
@@ -54,11 +59,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:drawablePadding="2dp"
+            android:textSize="22sp"
             android:textColor="@drawable/tab_text"
             android:gravity="center"
             android:background="#f60"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="我的"
+            android:text="影音"
             android:id="@+id/tab4"
             android:layout_gravity="center" />
     </LinearLayout>

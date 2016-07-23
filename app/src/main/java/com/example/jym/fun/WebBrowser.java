@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
@@ -71,6 +72,8 @@ public class WebBrowser extends Activity implements OnClickListener{
     private void setWebStyle() {
         mWebView.getSettings().setJavaScriptEnabled(true);
         mWebView.getSettings().setSupportZoom(true);
+        mWebView.getSettings().getBuiltInZoomControls();
+        mWebView.getSettings().setLoadWithOverviewMode(true);
         mWebView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
         mWebView.requestFocus();
         mWebView.loadUrl("http://www.baidu.com/");

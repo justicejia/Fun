@@ -56,6 +56,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                Intent intent = new Intent(this, SetActivity.class);
+                startActivity(intent);
+                break;
+        }
+        return true;
+    }
+    //    @Override
+//    public boolean onOptionItemselected(MenuItem mi)
+//    {
+//        switch (mi.getItemId()){
+//            case R.id.action_settings:
+//                Intent intent=new Intent(this,SetActivity.class);
+//                startActivity(intent);
+//                break;
+//        }
+//        return true;
+//    }
+
     private void bindViews(){
         Text_Tab1=(TextView)findViewById(R.id.tab1);
         Text_Tab2=(TextView)findViewById(R.id.tab2);
@@ -139,8 +161,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
        }
         ftransaction.commit();
     }
-
-
-
 
 }
